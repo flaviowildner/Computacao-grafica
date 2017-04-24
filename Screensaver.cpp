@@ -53,8 +53,6 @@ void draw()
 		glColor3f(listTriangles[i].color.r, listTriangles[i].color.g, listTriangles[i].color.b);
 		for (int j = 0; j < 3; j++) {
 			glVertex2f(listTriangles[i].pos[j].x, listTriangles[i].pos[j].y);
-			if (listTriangles[i].pos[j].x > WIDTH + 2)
-				printf("AA\n");
 		}
 
 		glEnd();
