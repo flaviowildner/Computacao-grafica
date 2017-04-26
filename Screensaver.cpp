@@ -54,7 +54,6 @@ void draw()
 		for (int j = 0; j < 3; j++) {
 			glVertex2f(listTriangles[i].pos[j].x, listTriangles[i].pos[j].y);
 		}
-
 		glEnd();
 	}
 	glEnd();
@@ -77,10 +76,9 @@ void init() {
 			listTriangles[i].color.g = ((float)rand() / RAND_MAX);
 			listTriangles[i].color.b = ((float)rand() / RAND_MAX);
 
-			
+			listTriangles[i].xCoef = 10 * ((float)rand() / RAND_MAX);
+			listTriangles[i].yCoef = 10 * ((float)rand() / RAND_MAX);
 		}
-		listTriangles[i].xCoef = 10 * ((float)rand() / RAND_MAX);
-		listTriangles[i].yCoef = 10 * ((float)rand() / RAND_MAX);
 	}
 }
 
